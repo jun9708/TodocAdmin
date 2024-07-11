@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" th:href="@{/css/common.css}">
+</head>
+<body>
+<div class="container">
+    <aside class="sidebar">
+        <div class="logo">Todoctodoc</div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">사용자 목록</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">설정</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-content">
+        <header>
+            <h1>사용자 목록</h1>
+            <div class="filter-date">
+                <input type="date" value="2023-08-01">
+            </div>
+            <div class="view-buttons">
+                <button>전체환자 보기</button>
+                <button>알림환자 보기</button>
+            </div>
+        </header>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>연령</th>
+                <th>항호르몬치료제</th>
+                <th>치료시작일</th>
+                <th>치료기간</th>
+                <th>총MRS점수</th>
+                <th>증상관리</th>
+                <th>알림</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>bcbcqwr2289060</td>
+                <td>36세</td>
+                <td>Tamoxifen</td>
+                <td>2023.08.21</td>
+                <td>02년 05개월 10일</td>
+                <td>35점</td>
+                <td>불편증상이 4회 이상 심함으로...</td>
+                <td><button class="notification-btn"></button></td>
+            </tr>
+            <!-- 나머지 행도 동일한 형식으로 추가 -->
+            </tbody>
+        </table>
+    </main>
+</div>
+</body>
+</html>
