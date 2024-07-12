@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ 게시판</title>
+    <link rel="stylesheet" th:href="@{/css/faq/style.css}">
+</head>
+<body>
+<div class="container">
+    <aside class="sidebar">
+        <div class="sidebar-item">사용자 목록</div>
+        <div class="sidebar-item active">FAQ</div>
+        <div class="sidebar-item">설정</div>
+        <div class="sidebar-footer">관리자계정아이디</div>
+    </aside>
+    <main class="main-content">
+        <header class="header">
+            <h1>화면1-1<br>FAQ게시판</h1>
+            <p>하위메뉴 FAQ와 질문내역게시판을 탭형식으로 확인가능</p>
+        </header>
+        <section class="faq-section">
+            <div class="faq-menu">
+                <div class="faq-menu-item active">FAQ</div>
+                <div class="faq-menu-item">질문내역</div>
+            </div>
+            <div class="faq-list">
+                <div class="filter-bar">
+                    <input type="date" value="2023-08-01">
+                    <input type="date" value="2023-08-01">
+                    <select>
+                        <option value="전체">전체</option>
+                    </select>
+                    <input type="text" placeholder="검색">
+                    <button>검색</button>
+                </div>
+                <table class="faq-table">
+                    <thead>
+                    <tr>
+                        <th>NO</th>
+                        <th>제목</th>
+                        <th>등록일</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>21</td>
+                        <td>갱년기 극복에 좋은 생활습관은 무엇인가요?</td>
+                        <td>2023.08.23</td>
+                    </tr>
+                    <!-- 반복 행 추가 가능 -->
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">10</a>
+                </div>
+                <button class="delete-btn">삭제</button>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+</html>
