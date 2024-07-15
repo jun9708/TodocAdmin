@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자(환자별) 증상관리 목록</title>
+    <link rel="stylesheet" th:href="@{/css/user/UserFeedBack.css}">
+</head>
+<body>
+<div class="sidebar">
+    <h2>TodocTodoc</h2>
+    <ul>
+        <li><a href="#">사용자 목록</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">설정</a></li>
+    </ul>
+</div>
+<div class="main-content">
+    <div class="header">
+        <h2>화면5 사용자(환자별) 증상관리 목록</h2>
+    </div>
+    <div class="patient-info">
+        <p>ID : ababababab</p>
+        <p>2023.08.01</p>
+        <table>
+            <tr>
+                <td>ID</td>
+                <td>연령</td>
+                <td>항호르몬치료제</td>
+                <td>치료시작일</td>
+                <td>치료기간</td>
+                <td>총MRS점수</td>
+                <td>증상관리</td>
+            </tr>
+            <tr>
+                <td>ababababab</td>
+                <td>36세</td>
+                <td>Tamoxifen</td>
+                <td>2023.08.21</td>
+                <td>02년 05개월 10일</td>
+                <td>35점</td>
+                <td>불편증상이 4회 이상...</td>
+            </tr>
+        </table>
+    </div>
+    <div class="feedback-section">
+        <h3>증상관리 피드백 : 총 12건</h3>
+        <ul class="feedback-list">
+            <li>
+                <p>불편증상이 4회 이상 심함으로 나와 이에 환자에게 외래 일정을 조정과 관련하여 상담하고 일정을 알림</p>
+                <span>2023.08.21</span>
+                <div class="actions">
+                    <button class="edit">✎</button>
+                    <button class="delete">🗑️</button>
+                </div>
+            </li>
+            <!-- 추가적인 피드백 항목들을 여기에 추가 -->
+        </ul>
+        <button class="write-feedback">글쓰기</button>
+    </div>
+</div>
+</body>
+</html>

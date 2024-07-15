@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>환자별 화면</title>
+    <link rel="stylesheet" th:href="@{/css/user/UserInfoStyle.css}">
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <h2>TodocTodoc</h2>
+        <ul>
+            <li><a href="#">사용자 목록</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">설정</a></li>
+        </ul>
+        <div class="admin-indicator">관리자 계정 아이디</div>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h1>환자별 화면</h1>
+        </div>
+        <div class="patient-info">
+            <div class="patient-id">
+                <p>ID: <span>ababababab</span></p>
+            </div>
+            <div class="patient-details">
+                <table>
+                    <tr>
+                        <td>ID</td>
+                        <td>연령</td>
+                        <td>항호르몬치료제</td>
+                        <td>치료시작일</td>
+                        <td>치료기간</td>
+                        <td>총MRS점수</td>
+                    </tr>
+                    <tr>
+                        <td>ababababab</td>
+                        <td>36세</td>
+                        <td>Tamoxifen</td>
+                        <td>2023.08.21</td>
+                        <td>02년 05개월 10일</td>
+                        <td>35점</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="symptoms">
+            <div class="symptom-category">
+                <h3>신체적 증상</h3>
+                <table>
+                    <tr>
+                        <td>항목</td>
+                        <td>최근점수</td>
+                        <td>알림</td>
+                    </tr>
+                    <tr>
+                        <td>열감</td>
+                        <td class="score">3점</td>
+                        <td><button>그래프보기</button></td>
+                    </tr>
+                    <tr>
+                        <td>심혈관 증상</td>
+                        <td class="score">3점</td>
+                        <td><button>그래프보기</button></td>
+                    </tr>
+                    <tr>
+                        <td>수면</td>
+                        <td class="score">3점</td>
+                        <td><button>그래프보기</button></td>
+                    </tr>
+                    <tr>
+                        <td>통증</td>
+                        <td class="score">3점</td>
+                        <td><button>그래프보기</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="symptom-category">
+                <h3>정신적 증상</h3>
+                <table>
+                    <tr>
+                        <td>항목</td>
+                        <td>최근점수</td>
+                        <td>알림</td>
+                    </tr>
+                    <tr>
+                        <td>우울</td>
+                        <td>3점</td>
+                        <td><button>그래프보기</button></td>
+                    </tr>
+                    <tr>
+                        <td>예민</td>
+                        <td>3점</td>
+                        <td><button>그래프보기</button></td>
+                    </tr>
+                    <tr>
+                        <td>불안</td>
+                        <td>3점</td>
+                        <td><button>그래프보기</button></td>
+                    </tr>
+                    <tr>
+                        <td>능력, 인지</td>
+                        <td>-</td>
+                        <td><button>그래프보기</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="symptom-category">
+                <h3>부인비뇨기적 증상</h3>
+                <table>
+                    <tr>
+                        <td>항목</td>
+                        <td>최근점수</td>
+                        <td>알림</td>
+                    </tr>
+                    <tr>
+                        <td>성기능</td>
+                        <td>3점</td>
+                        <td><button>그래프보기</button></td>
+                    </tr>
+                    <tr>
+                        <td>배뇨</td>
+                        <td>3점</td>
+                        <td><button>그래프보기</button></td>
+                    </tr>
+                    <tr>
+                        <td>부인과증상</td>
+                        <td>3점</td>
+                        <td><button>그래프보기</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="response-rates">
+            <div class="overall-rate">
+                <p>전체 응답률: <span>80%</span></p>
+            </div>
+            <div class="itemized-rates">
+                <p>신체적 증상: <span>63%</span></p>
+                <p>정신적 증상: <span>71%</span></p>
+                <p>부인비뇨기적 증상: <span>71%</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

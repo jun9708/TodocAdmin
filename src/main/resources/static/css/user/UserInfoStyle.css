@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar .admin-indicator {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ecf0f1;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.patient-info, .symptoms, .response-rates {
+    margin-bottom: 20px;
+}
+
+.patient-info .patient-id {
+    margin-bottom: 10px;
+}
+
+.patient-info .patient-id p {
+    font-size: 18px;
+}
+
+.patient-info .patient-details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.patient-info .patient-details table,
+.patient-info .patient-details table td {
+    border: 1px solid #bdc3c7;
+    padding: 8px;
+    text-align: center;
+}
+
+.symptom-category {
+    margin-bottom: 20px;
+}
+
+.symptom-category h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.symptom-category table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.symptom-category table,
+.symptom-category table td {
+    border: 1px solid #bdc3c7;
+    padding: 8px;
+    text-align: center;
+}
+
+.symptom-category .score {
+    color: red;
+}
+
+.response-rates .overall-rate {
+    margin-bottom: 10px;
+}
+
+.response-rates .overall-rate span,
+.response-rates .itemized-rates span {
+    font-weight: bold;
+}
+
+.response-rates .itemized-rates p {
+    margin: 0;
+    padding: 0;
+}

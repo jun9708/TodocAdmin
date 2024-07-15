@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class MainController {
 
+    //로그인 화면
     @GetMapping("/")
     public String index(){
         return "/index";

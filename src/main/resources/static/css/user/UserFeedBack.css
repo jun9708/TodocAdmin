@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ecf0f1;
+}
+
+.header h2 {
+    text-align: center;
+}
+
+.patient-info {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.patient-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.patient-info table, th, td {
+    border: 1px solid #bdc3c7;
+}
+
+.patient-info th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.feedback-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-section h3 {
+    color: #e74c3c;
+}
+
+.feedback-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.feedback-list li {
+    padding: 10px;
+    border-bottom: 1px solid #bdc3c7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feedback-list li p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.feedback-list li span {
+    margin-right: 20px;
+    color: #7f8c8d;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.actions button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.actions .edit:hover {
+    color: #2980b9;
+}
+
+.actions .delete:hover {
+    color: #c0392b;
+}
+
+.write-feedback {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin-left: auto;
+}
+
+.write-feedback:hover {
+    background-color: #2980b9;
+}

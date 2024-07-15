@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" th:href="@{/css/user/UserIndex.css}">
+</head>
+<body>
+<div class="container">
+    <aside class="sidebar">
+        <div class="logo">Todoctodoc</div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">사용자 목록</a></li>
+                <li><a th:href="@{/faq}">FAQ</a></li>
+                <li><a href="#">설정</a></li>
+            </ul>
+        </nav>
+    </aside>
+</div>
+</body>
+</html>
