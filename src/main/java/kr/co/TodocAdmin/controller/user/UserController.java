@@ -28,4 +28,10 @@ public class UserController {
         return "/user/userInfo";
     }
 
+    //User 증상관리 조회
+    @GetMapping("/userManager")
+    public String UserManager(){
+        return "/user/userManager";
+    }
+
 }

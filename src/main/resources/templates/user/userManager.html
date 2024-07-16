@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>증상관리 피드백</title>
+    <link rel="stylesheet" th:href="@{/css/user/UserManager.css}">
+</head>
+<body>
+<div class="container">
+    <aside class="sidebar">
+        <div class="logo">메뉴1</div>
+        <ul>
+            <li>사용자 목록</li>
+            <li>FAQ</li>
+            <li>설정</li>
+        </ul>
+    </aside>
+    <main class="main-content">
+        <header>
+            <h1>사용자(환자별) 증상관리 목록</h1>
+            <div class="breadcrumb">
+                홈 > 환자별 피드백 > 증상관리
+            </div>
+        </header>
+        <section class="user-info">
+            <h2>ID: ababababab</h2>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>연령</th>
+                    <th>항호르몬치료제</th>
+                    <th>치료시작일</th>
+                    <th>치료기간</th>
+                    <th>총MRS점수</th>
+                    <th>증상관리</th>
+                </tr>
+                <tr>
+                    <td>ababababab</td>
+                    <td>36세</td>
+                    <td>Tamoxifen</td>
+                    <td>2023.08.21</td>
+                    <td>02년 05개월 10일</td>
+                    <td>35점</td>
+                    <td>불면증상이 4회 이상 심함으로 나와...</td>
+                </tr>
+            </table>
+        </section>
+        <section class="feedback">
+            <h2>증상관리 피드백: 총 12건</h2>
+            <div class="feedback-item">
+                <p>불면증상이 4회 이상 심함으로 나와 이에 환자에게 외래 일정을 조정과 관련하여 상담하고 일정을 알림</p>
+                <div class="feedback-actions">
+                    <button class="edit-btn">편집</button>
+                    <button class="delete-btn">삭제</button>
+                </div>
+            </div>
+            <!-- 추가 피드백 항목들 -->
+        </section>
+    </main>
+</div>
+</body>
+</html>
